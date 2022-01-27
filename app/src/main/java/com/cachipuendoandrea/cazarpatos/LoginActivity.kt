@@ -25,6 +25,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         //INICIALIZACIÓN DE VARIABLES
         manejarArchivos = SharedPreferencesManager(this)
+        manejarArchivos = EncriptedSharedPreferencesManager(this)
+        manejarArchivos = FileExternalManager(this)
         editTextEmail = findViewById(R.id.editTextEmail)
         editTextPassword = findViewById(R.id.editTextPassword)
         buttonLogin = findViewById(R.id.buttonLogin)
