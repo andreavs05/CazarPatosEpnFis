@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">CazarPatos</string>
+    <string name="title_activity_picasso_app">PicassoApp</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="action_LinksUrl">Links Url</string>
+    <string name="action_LinksRecursos">Links Recursos</string>
+    <string name="action_LinksMemoriaExterna">Links Memoria Externa</string>
 </resources>
