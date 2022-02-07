@@ -16,12 +16,10 @@
         android:theme="@style/Theme.CazarPatos.Personalizado">
 
         <activity
-            android:name=".PicassoApp"
-            android:exported="false"
-            android:label="@string/title_activity_picasso_app"
-            android:theme="@style/Theme.CazarPatos.Personalizado.NoActionBar" />
-        <activity
             android:name=".RankingActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,8 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:parentActivityName=".LoginActivity"></activity>
+
     </application>
     <application />
 
