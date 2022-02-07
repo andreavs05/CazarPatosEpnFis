@@ -93,9 +93,7 @@ class LoginActivity : AppCompatActivity() {
     //_______________________________________ FUNCIONES __________________________________________//
     private fun LeerDatosDePreferencias() {
         val listadoLeido = manejarArchivos.ReadInformation()
-        if(listadoLeido.first != null){
-            checkBoxRecordarme.isChecked = true
-        }
+        true.also { checkBoxRecordarme.isChecked = it }
         editTextEmail.setText(listadoLeido.first)
         editTextPassword.setText(listadoLeido.second)
     }
